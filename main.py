@@ -71,12 +71,12 @@ if ImagePath is not None:
 
         # Process and predict when button is clicked
         if st.button('Predict'):
-            loaded_single_image = image_.resize((32, 32))  # Resize for model input
+            loaded_single_image = image_.resize((224, 224))  # Resize for model input
             test_image = np.array(loaded_single_image) / 255.0  # Normalize
             test_image = np.expand_dims(test_image, axis=0)  # Add batch dimension
 
             # Model prediction
-            logits = loaded_model(test_image)
+            logits = loaded_model.predict(test_image)
             softmax = tf.nn.softmax(logits)
             predict_output = tf.argmax(logits, -1).numpy()[0]
 
