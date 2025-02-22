@@ -76,7 +76,7 @@ if ImagePath is not None:
             test_image = np.expand_dims(test_image, axis=0)  # Add batch dimension
 
             # Model prediction
-            logits = loaded_model.predict(test_image)
+            logits = loaded_model(test_image)
             softmax = tf.nn.softmax(logits)
             predict_output = tf.argmax(logits, -1).numpy()[0]
 
