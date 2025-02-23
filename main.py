@@ -10,7 +10,7 @@ def set_background():
         """
         <style>
         .stApp {
-            background: url("https://i.pinimg.com/736x/f6/39/7b/f6397b79d834c7a7e7d5d880c7c7926f.jpg") no-repeat center center fixed;
+            background: url("https://i.pinimg.com/736x/e7/fc/bc/e7fcbcf05bc59b899fb39440e6fa8ceb.jpg") no-repeat center center fixed;
             background-size: cover;
         }
         /* Remove overlay if not needed */
