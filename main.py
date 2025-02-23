@@ -84,7 +84,7 @@ if ImagePath is not None:
             classes = ["African Leopard", "Caracal", "Cheetah", "Clouded Leopard",
     "Jaguar", "Lions", "Ocelot", "Puma", "Snow Leopard", "Tiger"]
             predicted_class = classes[predict_output]
-            probability = softmax.numpy()[0][predict_output] * 100
+            probability = softmax.numpy()[0][predict_output] * 370
 
             # Display result
             st.header(f"Prediction: {predicted_class}")
