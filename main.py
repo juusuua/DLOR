@@ -10,7 +10,7 @@ def set_background():
         """
         <style>
         .stApp {
-            background: url("https://i.pinimg.com/736x/ac/5d/28/ac5d28e3cb4d576268704c5bdfd51940.jpg") no-repeat center center fixed;
+            background: url("https://i.pinimg.com/736x/f6/39/7b/f6397b79d834c7a7e7d5d880c7c7926f.jpg") no-repeat center center fixed;
             background-size: cover;
         }
         /* Remove overlay if not needed */
@@ -53,7 +53,7 @@ if not os.path.exists(MODEL_PATH):
 else:
     loaded_model = tf.keras.models.load_model(MODEL_PATH)
 
-st.title('CIFAR-10 Categories Classification')
+st.title('10 Big Cats of the Wild - Image Classification')
 
 # Image upload options
 genre = st.radio("How You Want To Upload Your Image", ('Browse Photos', 'Camera'))
